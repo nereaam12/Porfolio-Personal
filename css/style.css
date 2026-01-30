@@ -1,0 +1,534 @@
+/* =========================
+   BASE
+========================= */
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  background-color: #ffffff;
+  color: #1f2937;
+}
+
+/* =========================
+   NAVBAR (TODAS LAS PÁGINAS)
+========================= */
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-logo {
+  width: 64px;
+  height: auto;
+}
+
+.nav-textito {
+  font-size: 1rem;
+  color: #6b7280;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+.nav-link {
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* =========================
+   HOME
+========================= */
+
+/* Jumbotron */
+
+.jumbotron-home {
+  min-height: 50vh;
+  background-image: url("../img/brand.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.jumbotron-titulo {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.jumbotron-subtitulo {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  color: #4b5563;
+}
+
+.jumbotron-boton-proyectos {
+  display: inline-block;
+  background-color: #6c757d;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Cards Home */
+
+.card {
+  border: none;
+  border-radius: 24px;
+  background-color: #f9fafb;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+}
+
+.card-top {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px 20px 0 0;
+}
+
+.card-top-diseno {
+  background-color: #f3e4e1;
+}
+
+.card-top-proyectos {
+  background-color: #cfe3d6;
+}
+
+.card-top-contactos {
+  background-color: #ededed;
+}
+
+.card-fotos {
+  width: 150px;
+  height: auto;
+}
+
+.card-body {
+  padding: 2rem;
+  text-align: left;
+}
+
+/* Botones Cards */
+
+.boton-diseño,
+.boton-proyectos,
+.boton-contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+  border-radius: 999px;
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: #374151;
+}
+
+.boton-diseño {
+  background-color: #e9dcd8;
+}
+
+.boton-proyectos {
+  background-color: #d4e2da;
+}
+
+.boton-contacto {
+  background-color: #e0e0e0;
+}
+
+/* =========================
+   SOBRE MÍ
+========================= */
+
+.page-sobremi h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.page-sobremi h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #d1d5db;
+  margin: 16px auto 0;
+  border-radius: 2px;
+}
+
+.page-sobremi .card-presentacion {
+  background-color: #ededed;
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.page-sobremi .texto-sobremi {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.page-sobremi .texto-sobremi-titulo {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Habilidades */
+
+.page-sobremi .card-habilidad {
+  border: 5px solid transparent;
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  background-color: #ededed;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.page-sobremi .card-habilidad:hover {
+  border-color: #f3e4e1;
+}
+
+.page-sobremi .icono-habilidad {
+  width: 72px;
+  height: 72px;
+  background-color: #f3f4f6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+}
+
+.page-sobremi .icono-habilidad img {
+  width: 38px;
+  height: auto;
+}
+
+.page-sobremi .card-habilidad h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.page-sobremi .card-habilidad p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin: 0;
+}
+
+/* Formación */
+
+.page-sobremi .text-formacion {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  border: 4px solid #cfe3d6;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+/* Principios */
+
+.page-sobremi .principio {
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.page-sobremi .principio-claridad {
+  background-color: #f3e4e1;
+}
+
+.page-sobremi .principio-funcionalidad {
+  background-color: #dbeae3;
+}
+
+.page-sobremi .principio-estetica {
+  background-color: #ededed;
+}
+
+/* =========================
+   PROYECTOS
+========================= */
+
+.proyectos-header {
+  max-width: 100%;
+  padding: 0;
+}
+
+.proyectos-header .carousel {
+  overflow: hidden;
+}
+
+.proyectos-header img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+}
+
+.lista-proyectos .titulo-seccion {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.lista-proyectos .titulo-seccion::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #d1d5db;
+  margin: 16px auto 0;
+  border-radius: 2px;
+}
+
+.proyecto-card {
+  background-color: #ededed;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.proyecto-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+}
+
+.proyecto-titulo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.proyecto-descripcion {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.btn-proyecto {
+  border-radius: 999px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 500;
+  background-color: #c0e1e5;
+  border: none;
+  color: #1f2937;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-proyecto:hover {
+  background-color: #c0e1e5;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   CONTACTO
+========================= */
+
+.page-contacto .titulo-seccion {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.page-contacto .titulo-seccion::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #d1d5db;
+  margin: 16px auto 0;
+  border-radius: 2px;
+}
+
+.page-contacto .contacto-dato {
+  gap: 1rem;
+}
+
+.page-contacto .contacto-dato strong {
+  display: block;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.15rem;
+}
+
+.page-contacto .contacto-dato span {
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+.page-contacto .icono-contacto {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.page-contacto .icono-contacto img {
+  width: 40px;
+  height: auto;
+}
+
+.page-contacto .icono-email {
+  background-color: #dbeae3;
+}
+
+.page-contacto .icono-telefono {
+  background-color: #f3e4e1;
+}
+
+.page-contacto .icono-ubicacion {
+  background-color: #ededed;
+}
+
+.page-contacto .contacto-formulario {
+  background-color: #ededed;
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.page-contacto .contacto-formulario h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.page-contacto .form-label {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.page-contacto .form-control {
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+}
+
+.page-contacto .form-control:focus {
+  border-color: #cfe3d6;
+  box-shadow: 0 0 0 0.15rem rgba(207, 227, 214, 0.5);
+}
+
+.page-contacto .btn-contacto {
+  background-color: #cfe3d6;
+  border: none;
+  border-radius: 999px;
+  padding: 0.9rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #1f2937;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.page-contacto .btn-contacto:hover {
+  background-color: #b7d6c9;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer-principal {
+  background-color: #f5f6f7;
+  padding: 3.5rem 0;
+  margin-top: 5rem;
+  font-size: 0.9rem;
+  color: #1f2937;
+}
+
+.footer-titulo {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.footer-link,
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #4b5563;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-icono {
+  width: 30px;
+  height: auto;
+}
+
+.footer-mapa {
+  width: 100%;
+  height: 160px;
+  border-radius: 12px;
+}
+
+.footer-logo-img {
+  width: 56px;
+}
+
+.footer-nombre {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.footer-nombre-abajo {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.footer-copyrigth {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+/* =========================
+   RESPONSIVE (FINAL)
+========================= */
+
+@media (max-width: 768px) {
+  .page-sobremi h1 {
+    font-size: 2rem;
+  }
+
+  .page-sobremi .card-presentacion,
+  .page-sobremi .text-formacion {
+    padding: 2rem;
+  }
+
+  .page-contacto .contacto-formulario {
+    padding: 2rem;
+  }
+
+  .proyectos-header img {
+    height: 220px;
+  }
+
+  .footer-principal {
+    text-align: center;
+  }
+
+  .footer-item {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .proyecto-item .offset-lg-7 {
+    margin-left: 0;
+  }
+}
